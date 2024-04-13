@@ -1,0 +1,199 @@
+
+
+
+#edit,#delete{
+  padding:6px;
+  margin-left: 10px;
+  border-radius:10px;
+  letter-spacing: 2px;
+  border:none;
+  
+}
+#edit{
+  background-color:rgb(60, 16, 138);
+  color:white;
+}
+#delete{
+  background-color:red;
+  color:white;
+}
+#play{
+  font-size: 30px;          
+  position:relative;
+  left:50px;
+  margin-left:10px;
+}
+#time{
+  text-align: center;
+}
+#pause{
+  color:white;
+  font-size: 30px;
+  position:relative;
+  left:60px;
+}
+#timer{
+  position: absolute;
+  left:398px;
+ top:50px;
+   border-radius: 50%;
+ width:200px;
+padding:20px;
+background-color:black;
+color:white;
+
+
+}
+#inner1{
+  position:absolute;
+  left:50px;
+  bottom:380px;
+}
+body{
+  
+  background: url("https://th.bing.com/th/id/R.8a1cbaa2e04b77fead30559e91a29bc5?rik=TAe%2bf6WhC1anyQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f08%2fHD-free-black-wallpaper.jpg&ehk=WrolQy%2bhkhUTDMZIdR1JlcQb%2bqPubiPfLwxeRyRlmGY%3d&risl=&pid=ImgRaw&r=0");
+  background-size: cover;
+  height:1000px
+}
+body h2{
+  color:white;
+  text-align: center;
+}
+#btn{
+  padding:10px;
+  cursor:pointer;
+  border:none;
+  background-color: black;
+  color:wheat;
+  border-radius: 20px;
+  width:400px;
+}
+#outer{
+  position:relative;
+  left:20px;
+  overflow-y: auto;
+  width:1100px;
+  height:900px;
+  padding: 20px;
+ bottom:60px;
+  
+  
+}  
+.field label{
+  margin-bottom: 8px;
+  color:white;
+  font-size: 30px;
+}
+.field input{
+  width:400px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin:10px;
+  position: relative;
+  right:10px;
+}
+.field{
+  margin-bottom: 20px;
+}
+.heading{
+ background-color: black;
+     color: white;
+    }
+    .table{
+   width:600px;
+  position:relative;
+  left:480px;
+  top:230px;
+   border-radius:20px;
+    }
+    .table tr:nth-child(odd){
+    
+    background-color:white;
+    color: black;
+    }
+
+    .table tr:nth-child(even)
+    {
+        background-color:black;
+        color: white;
+    }
+    td,th{
+        padding:20px;
+    }
+    .table tr{
+      border-radius: 20px;
+    }
+    .dropdown{
+      position: absolute;
+  left:800px;
+ top:70px;
+color:white;
+    }
+    .dropdown button{
+      cursor: pointer;
+      padding:10px;
+      border:none;
+      background-color: black;
+      color: white;
+      width:300px;
+      box-shadow: 3px 3px 3px black;
+    }
+    .dropdowncontent a{
+      display:block;
+     
+      padding:0px;
+      text-decoration: none;
+      color:white;
+      padding-left: 20px;
+      
+    }
+    .dropdowncontent a:nth-child(1){
+      margin-top:20px;
+    }
+    .dropdown .dropdowncontent{
+      display:none;
+    }
+    .dropdown:hover .dropdowncontent{
+      display:block;
+      
+    }
+    .dropdowncontent a:hover{
+      background-color: black;
+      cursor: pointer;
+      border-radius: 20px;
+      font-size: 30px;
+      color: aliceblue;
+    }
+  
+    @media screen and (max-width:600px) {
+      #outer
+      {
+        width:800px;
+        overflow-y: auto;
+        height:700px;
+      }
+      #inner1{
+        position:relative;
+        top:300px;
+      }
+      .table{
+        position: relative;
+        left:10px;
+        top:330px;
+      }
+      body h2{
+        position:relative;
+        left:200px;
+        top:20px;
+      }
+     #timer{
+      top:50px;
+      left:150px;
+      top:80px;
+     }
+     .dropdown{
+      left:100px;
+      top:250px;
+     }
+    
+    }

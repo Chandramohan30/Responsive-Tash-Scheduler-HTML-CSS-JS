@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+  <body>
+    <h2>Task Scheduler</h2>
+    <div id="outer">
+      
+      <div id="inner1" >
+        <form>
+          <div class="field">
+            <label>Enter task</label><br>
+              <input required type="text" value="" id="task" >
+      
+           </div>
+           <div class="field">
+             
+            <label>Enter Description</label><br>
+            <input type="text" value="" id="description" required>
+            
+           </div>
+              <button id="btn" type="button" onclick="handlebutton()">Add</button>
+          </form>
+      
+
+      </div>
+     
+    <table class="table" style="border:3px solid black;" >
+      <thead>
+      <tr>
+     
+     <th class="heading">Task</th>
+    <th class="heading">Description</th>
+    <th class="heading">Duration</th>
+    <th class="heading">Operations</th>
+     </tr>
+    </thead>
+    <tbody id="mybody">
+ 
+ 
+   </tbody>
+   </table>
+
+   <div id="timer">
+    <h1 id="time"></h1>
+    <i class="fa-solid fa-play" id="play" type="button" onclick="start()"></i>
+    <i class="fa-solid fa-pause"id="pause" type="button" onclick="stop()"></i>
+       </div>
+       <div class="dropdown">
+        <button>Filter</button>
+        <div class="dropdowncontent" id="drop">
+         
+        </div>
+
+       </div>
+      </div>
+  </body>
+  
+   </html>
+   <script src="index.js"></script>
